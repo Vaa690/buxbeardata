@@ -12,4 +12,5 @@ class NokeWebhookView(APIView):
         authentication_classes = (TokenAuthentication,)
         permission_classes = (IsAuthenticated,)
 
+        print('Got webhook from Noke')
         return Response(None, status=200)

@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-!lpk)2_pd%&^j4^vd==lq@n!ns%9jm_0mgq$c01bc_-&d#weto
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+
+AUTH_USER_MODEL='authentication.User'
 
 
 # Application definition
@@ -37,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'authentication',
+    'buxbear',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [

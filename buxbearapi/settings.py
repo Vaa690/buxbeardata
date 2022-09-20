@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'authentication',
     'buxbear',
     'rest_framework.authtoken',
-    'rest_framework_api_key',
+    'rest_framework.api_key',
 ]
 
 MIDDLEWARE = [

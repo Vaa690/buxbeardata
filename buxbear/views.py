@@ -14,4 +14,5 @@ class NokeWebhookView(APIView):
 
         print('Got webhook from Noke')
         print(request)
+        print(request.data)
         return Response(None, status=200)

@@ -14,4 +14,18 @@ class NokeWebhookView(APIView):
 
         print('Got webhook from Noke')
         print(request)
+        print(request.data)
+        return Response(None, status=200)
+
+
+
+class DialpadWebhookView(APIView):
+
+    def post(self, request):
+        authentication_classes = (TokenAuthentication,)
+        permission_classes = (IsAuthenticated,)
+
+        print('Got webhook from dialpad')
+        print(request)
+        print(request.data)
         return Response(None, status=200)
